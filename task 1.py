@@ -36,6 +36,5 @@ print (f)
 f = Square.get_squ(4)
 print (f)
 
-g = (1,2)
-print (g)
+
 
