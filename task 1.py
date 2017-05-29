@@ -5,50 +5,37 @@
 #- получение площади
 
 class Figures:
-    def __init__(self, name):
+    def __init__(self, name, x, y, per, squ):
         pass
+    def get_centr(x,y):
+        return (x,y)
+
+    def get_perimetr(per):
+        return per
+
+    def get_squ(squ):
+        return squ
 
 class Round(Figures):
-    def __init__(self, name, diam):
+    def __init__(self, name, x, y, per, squ):
         pass
-    def get_centr(self):
-        pass
-
-    def get_perimetr(self):
-        p = 3.14 * int(self)
-        return p
-
-    def get_squ(self):
-        s = 3.14 * (int(self)/2)**2
-        return s
 
 class PramUgol(Figures):
-    def __init__(self, name, side_a, side_b):
-        pass
-
-    def get_centr(self):
-        pass
-
-    def get_perimetr(self):
-        pass
-
-    def get_squ(self):
+    def __init__(self, name, x, y, per, squ):
         pass
 
 
 class Square(Figures):
-    def __init__(self, name, side_a):
+    def __init__(self, name, x, y, per, squ):
         pass
 
-    def get_centr(self):
-        pass
-
-    def get_perimetr(self):
-        pass
-
-    def get_squ(self):
-        pass
-
-f = Round.get_perimetr('1')
+f = Round.get_perimetr(1)
 print (f)
+f = PramUgol.get_centr(2,3)
+print (f)
+f = Square.get_squ(4)
+print (f)
+
+g = (1,2)
+print (g)
 
